@@ -5,21 +5,21 @@
 class CircleciMigrate < Formula
   desc "CLI to migrate CircleCI organizations (contexts, projects, secrets) between orgs"
   homepage "https://github.com/AwesomeCICD/circleci-org-migration-cli"
-  version "0.12.0"
+  version "0.13.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/AwesomeCICD/circleci-org-migration-cli/releases/download/v0.12.0/circleci-migrate_0.12.0_darwin_amd64.tar.gz"
-      sha256 "ae7f2a00e10d4c9ad174c381344cf4827c1666649f2959a7ec713dce0b4f165c"
+      url "https://github.com/AwesomeCICD/circleci-org-migration-cli/releases/download/v0.13.0/circleci-migrate_0.13.0_darwin_amd64.tar.gz"
+      sha256 "91e373432dc3c74568f5cd2fabbdf87199ba76a1b655c4396cd9f149bbef0d19"
 
       def install
         bin.install "circleci-migrate"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/AwesomeCICD/circleci-org-migration-cli/releases/download/v0.12.0/circleci-migrate_0.12.0_darwin_arm64.tar.gz"
-      sha256 "ee7d9c4962fc714fc83fba9fcd840e4c01ba8d40bf7958fef0879e5c52a29d92"
+      url "https://github.com/AwesomeCICD/circleci-org-migration-cli/releases/download/v0.13.0/circleci-migrate_0.13.0_darwin_arm64.tar.gz"
+      sha256 "4615873c61f51948919d7cf9385c644687c7094ff65084ca373f5b1c2c61e37e"
 
       def install
         bin.install "circleci-migrate"
@@ -29,15 +29,15 @@ class CircleciMigrate < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/AwesomeCICD/circleci-org-migration-cli/releases/download/v0.12.0/circleci-migrate_0.12.0_linux_amd64.tar.gz"
-      sha256 "f9cada459309e59a04a316153a2456280858d1a437a10c46400da646d10f67c3"
+      url "https://github.com/AwesomeCICD/circleci-org-migration-cli/releases/download/v0.13.0/circleci-migrate_0.13.0_linux_amd64.tar.gz"
+      sha256 "051295e0b6e25a46571513f122dfe695a3f12538eba75eb735ca690986215e47"
       def install
         bin.install "circleci-migrate"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/AwesomeCICD/circleci-org-migration-cli/releases/download/v0.12.0/circleci-migrate_0.12.0_linux_arm64.tar.gz"
-      sha256 "3e6ca0296d3e5f811ef46196ba616a37787e7d1cd795c84bf8f5b0b6035b939f"
+      url "https://github.com/AwesomeCICD/circleci-org-migration-cli/releases/download/v0.13.0/circleci-migrate_0.13.0_linux_arm64.tar.gz"
+      sha256 "f90f49cf54b39fd374b4eb36a436fc42ac7207f1a712f564da13ad43624a0798"
       def install
         bin.install "circleci-migrate"
       end
